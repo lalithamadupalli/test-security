@@ -12,7 +12,8 @@ def get_user():
     user_id = request.args.get("id")
     conn = sqlite3.connect("users.db")
     # SQL injection: user input concatenated into the query
-    cur = conn.execute("SELECT * FROM users WHERE id = " + user_id)
+    #cur = conn.execute("SELECT * FROM users WHERE id = " + user_id)
+    cursor.execute("SELECT * FROM users WHERE name = ?", (name,))
     return str(cur.fetchall())
 
 
@@ -21,3 +22,4 @@ def ping():
     host = request.args.get("host")
     # Command injection: user input passed to a shell
     return subprocess.check_output("ping -c 1 " + host, shell=True)
+    
