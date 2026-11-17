@@ -1,5 +1,3 @@
 # DEMO ONLY: fake credentials
-AWS_ACCESS_KEY_ID = "AKIA2AKPK2MEWHYWTWV7"
-AWS_SECRET_ACCESS_KEY = "vqmc4RmpXaf4qTYtmx4NLjlJYk6hLMqJG1de5upb"
 DB_USER = "admin"
 DB_PASSWORD = "Pa55w0rd-demo-123"
